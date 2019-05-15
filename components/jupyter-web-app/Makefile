@@ -14,9 +14,9 @@
 #
 
 # Project used with GCB
-PROJECT ?= kubeflow-dev
+PROJECT ?= kubeflow-secured
 # Registry where the image should be published
-REGISTRY_PROJECT ?= kubeflow-dev
+REGISTRY_PROJECT ?= kubeflow-secured
 OUTPUT ?= output.yaml
 
 # We want the git tag to be the last commit to this directory so we don't
