@@ -155,6 +155,10 @@ def new_notebook():
       default_storage_class=is_default, existing_pvcs=pvcs)
 
 
+@app.route('/healthz')
+def health_check():
+  return jsonify({'isHealthy': True})
+
 @app.route("/")
 def home():
   base_ns = "kubeflow"

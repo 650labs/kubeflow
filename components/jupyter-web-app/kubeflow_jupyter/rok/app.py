@@ -158,6 +158,10 @@ def new_notebook():
       rok_token=rok_token)
 
 
+@app.route('/healthz')
+def health_check():
+  return jsonify({'isHealthy': True})
+
 @app.route("/")
 def home():
   base_ns = "kubeflow"
